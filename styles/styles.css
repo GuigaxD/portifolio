@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Russo+One&display=swap');
+
+:root{
+    --cor-preta: #222831;
+    --cor-azul-claro: #DCD7C9;
+    --cor-branco: #A27B5C;
+}
+
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+strong{
+    color: #A27B5C;
+    font-weight: 900;
+    font-style: oblique;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-preta);
+    box-sizing: border-box;
+    color: var(--cor-branco);
+}
+
+.cabecalho{
+    margin: 2% 0% 0% 12%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+
+}
+
+.cabecalho__menu__link{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-azul-claro);
+    text-decoration: none;
+    font-size: 1.7em;
+}
+
+.cabecalho__menu__link:hover{
+    color: white;
+}
+
+.titulo-destaque{
+    color: var(--cor-azul-claro);
+}
+
+.apresentacao {
+    padding: 4% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;    
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    align-items: flex-start;
+    font-size: 2.25rem;
+    font-family: 'Russo One', sans-serif;
+
+    
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    color: #DCD7C9;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'Russo One', sans-serif;
+}
+
+.apresentacao__links__link{
+    border: 2px solid var(--cor-azul-claro);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 0%;
+    width: 45%;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 0.75rem 0.0625rem   ;
+    font-size: 1.875rem;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+
+.apresentacao__links__link:hover{
+    background-color: rgba(85, 83, 83, 0.596);
+    font-style: oblique;
+    padding: 3%;
+}
+
+.rodape{
+    background-color: var(--cor-azul-claro);
+    text-align: center;
+    padding: 0.1%;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 539;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.imagem__git{
+    width: 20%;
+}
+
+.imagem__insta{
+    width: 19%;
+}
+
+.imagem__guiga{
+    width: 48%;
+}
+
+@media (max-width: 1200px){
+
+    .cabecalho{
+        margin: 5% 0% 3% 0%;    
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2em;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .apresentacao__links__link{
+        padding-left: 13%;
+        padding-right: 13%;
+        width: 37%;
+
+    }
+}   
+
+@media (max-width: 430px){
+    .apresentacao__links__link{
+        width: auto;
+    }
+}
+
+@media (max-width: 720px){
+    .apresentacao__links__github{
+        margin-bottom: 10%;
+    }
+}
+    
